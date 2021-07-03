@@ -1,0 +1,2 @@
+[jenkins]
+f1.jb68.com
