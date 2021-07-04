@@ -4,6 +4,12 @@ agent any
         stage ('Build') {
             steps {
                 echo 'Running build phase. '
+                sh '''#!/bin/bash
+                    echo "hello world"
+                    ls
+                    whoami
+                '''
+                ansible-playbook ./ping.yml -i hosts
             }
         }
         stage ('Test') {

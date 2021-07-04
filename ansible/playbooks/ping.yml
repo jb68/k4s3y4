@@ -1,0 +1,6 @@
+- hosts: all
+  become: yes
+  tasks:
+  - action: ping
+    register: hello
+  - debug: msg="{hello.stdout}"
