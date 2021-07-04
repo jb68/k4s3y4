@@ -8,7 +8,7 @@ agent any
                     echo "hello world"
                     ls
                     whoami
-                    cd ansible && ansible-playbook ./playbooks/ping.yml -i inventory.txt
+                    cd ansible && ansible-playbook -u root ./playbooks/ping.yml -i inventory.txt
                 '''
             }
         }
