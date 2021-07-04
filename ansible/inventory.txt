@@ -2,3 +2,6 @@
 f1.jb68.com
 [jenkins:vars]
 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+
+[windows2019]
+3.235.152.4
