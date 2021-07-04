@@ -8,8 +8,8 @@ agent any
                     echo "hello world"
                     ls
                     whoami
+                    ansible-playbook ./ping.yml -i hosts
                 '''
-                ansible-playbook ./ping.yml -i hosts
             }
         }
         stage ('Test') {
