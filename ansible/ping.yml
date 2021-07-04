@@ -1,6 +1,4 @@
 - hosts: webservers
-
   become: yes
-
   tasks:
    - ping
