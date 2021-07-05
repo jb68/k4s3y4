@@ -1,11 +1,11 @@
+- hosts: windows2019
+  become: no
+  tasks:
+  - action: win_ping
+
 - hosts: jenkins
   become: yes
   tasks:
   - action: ping
     register: hello
   - debug: msg="{hello.stdout}"
-
-- hosts: windows2019
-  become: no
-  tasks:
-  - action: win_ping

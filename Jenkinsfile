@@ -13,7 +13,7 @@ agent any
                         export WIN_USR=$winUser
                         export WIN_PWD=$winPass
                         printenv
-                        cd ansible && ansible-playbook ./playbooks/ping.yml -i inventory.txt
+                        cd ansible && ansible-playbook -vvv ./playbooks/ping.yml -i inventory.txt
                     '''
                 }
             }
@@ -24,7 +24,7 @@ agent any
                 sh '''#!/bin/bash
                         echo "hello world from bash"
                         printenv
-                        cd ansible && ansible-playbook ./playbooks/winupdt.yml -i inventory.txt
+                        cd ansible && ansible-playbook -vvv ./playbooks/winupdt.yml -i inventory.txt
                     '''
             }
         }
