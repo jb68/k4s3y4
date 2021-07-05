@@ -4,4 +4,10 @@ f1.jb68.com
 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
 
 [windows2019]
-3.235.152.4
+"{{ lookup('env','WIN_IP') }}"
+[windows2019:vars]
+ansible_user="{{ lookup('env','WIN_USR') }}"
+ansible_password="{{ lookup('env','WIN_PWD') }}"
+ansible_port=5986
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore

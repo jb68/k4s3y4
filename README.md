@@ -22,6 +22,7 @@ test 4 k4s3y4
     - test automation, push to GH will run Ansible on Jenkins - Done
 ### Windows AWS
     - install a windoze server 4 free on AWS - Done
+      https://aws.amazon.com/premiumsupport/knowledge-center/free-tier-windows-instance/
     - test connection rdp from @home - Done
     - add Ansible client - Done
     - check listener ps command: winrm enumerate winrm/config/Listener - Done
