@@ -3,9 +3,9 @@
   tasks:
   - action: win_ping
 
-- hosts: jenkins
-  become: yes
-  tasks:
-  - action: ping
-    register: hello
-  - debug: msg="{hello.stdout}"
+#- hosts: jenkins
+#  become: yes
+#  tasks:
+#  - action: ping
+#    register: hello
+#  - debug: msg="{hello.stdout}"
