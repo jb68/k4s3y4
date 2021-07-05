@@ -2,6 +2,7 @@
 f1.jb68.com
 [jenkins:vars]
 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+ansible_user=root
 
 [windows2019]
 "{{ lookup('env','WIN_IP') }}"

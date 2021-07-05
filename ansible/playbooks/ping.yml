@@ -5,7 +5,7 @@
     register: hello
   - debug: msg="{hello.stdout}"
 
-  - hosts: windows2019
-  become: yes
+- hosts: windows2019
+  become: no
   tasks:
   - action: win_ping

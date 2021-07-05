@@ -29,4 +29,6 @@ test 4 k4s3y4
     - Set firewall add port 5985, 5986 - Done
 ### Ansible
     - create a windows inventory and playbook for ping, update, reboot
-    - check connection to windoze `ansible windows2019 -i inventory.txt -m win_ping`
+    - check connection to windoze `ansible windows2019 -i inventory.txt -m win_ping` - DONE
+    - swich to use env variables for WIN_IP, WIN_PWD, WIN_USR - Done
+    - fix ping playbooks
