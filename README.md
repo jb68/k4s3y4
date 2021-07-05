@@ -20,5 +20,12 @@ test 4 k4s3y4
     - test Ansible manually Done
     ansible-playbook -u root ./playbooks/ping.yml -i inventory.txt
     - test automation, push to GH will run Ansible on Jenkins - Done
-### Windows
-    - install a windoze server 4 free on AWS ?
+### Windows AWS
+    - install a windoze server 4 free on AWS - Done
+    - test connection rdp from @home - Done
+    - add Ansible client - Done
+    - check listener ps command: winrm enumerate winrm/config/Listener - Done
+    - Set firewall add port 5985, 5986 - Done
+### Ansible
+    - create a windows inventory and playbook for ping, update, reboot
+    - check connection to windoze `ansible windows2019 -i inventory.txt -m win_ping`
