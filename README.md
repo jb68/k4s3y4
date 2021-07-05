@@ -31,4 +31,8 @@ test 4 k4s3y4
     - create a windows inventory and playbook for ping, update, reboot
     - check connection to windoze `ansible windows2019 -i inventory.txt -m win_ping` - DONE
     - swich to use env variables for WIN_IP, WIN_PWD, WIN_USR - Done
-    - fix ping playbooks
+    - fix ping playbooks -done
+    - test update plybooks - done
+### Jenkins
+    - update and clean jenkinsfile - done
+    - create kaseya user in Jenkins - done
