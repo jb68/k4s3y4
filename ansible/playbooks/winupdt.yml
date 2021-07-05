@@ -1,5 +1,5 @@
 - name: Windows Feature
-  hosts: windows
+  hosts: windows2019
   gather_facts: true
   tasks:
     - name: Disable Private firewall
