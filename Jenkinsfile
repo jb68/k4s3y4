@@ -3,20 +3,19 @@ agent any
     stages {
         stage ('Windows Update') {
             steps {
-                echo 'Starting Update phase. '
+                echo 'Starting Update phase.'
                 withCredentials([usernamePassword(credentialsId: 'aws_win_1_creds',
                      passwordVariable: 'WIN_PWD', usernameVariable: 'WIN_USR')]) {
                     sh '''#!/bin/bash
                             echo "Running Ansible Update"
-                            printenv
-                            cd ansible && ansible-playbook -vvvv ./playbooks/winupdt.yml -i inventory.txt
+                            cd ansible && ansible-playbook ./playbooks/winupdt.yml -i inventory.txt
                         '''
                     }
             }
         }
         stage ('Ping Check') {
             steps {
-                echo 'Starting ping phase. '
+                echo 'Starting ping phase.'
                 withCredentials([usernamePassword(credentialsId: 'aws_win_1_creds',
                      passwordVariable: 'WIN_PWD', usernameVariable: 'WIN_USR')]) {
 
