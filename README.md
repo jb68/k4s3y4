@@ -36,3 +36,11 @@ test 4 k4s3y4
 ### Jenkins
     - update and clean jenkinsfile - done
     - create kaseya user in Jenkins - done
+
+
+
+# TODO
+    - docker-compose for jenkins server & slaves
+    - docker files for jenkins slaves
+    - test jenkins setup
+    - multiple servers on ansible
