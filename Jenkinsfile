@@ -24,6 +24,7 @@ agent any
                 sh '''#!/bin/bash
                         echo "hello world from bash"
                         printenv
+                        cd ansible && ansible-playbook ./playbooks/winupdt.yml -i inventory.txt
                     '''
             }
         }
