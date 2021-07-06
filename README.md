@@ -40,7 +40,7 @@ This require a Github repository, a jenkins server and a windows server
   - [x] test automation, push to GH will run Ansible on Jenkins
 - **Windows AWS**
   - [x] add Ansible client
-  - [x] check listener ps command: winrm enumerate winrm/config/Listener
+  - [x] check listener ps command: winrm enumerate winrm/config/Listener  
   Note: on AWS public IP is not on device, it is on firewall. PublicIP -> Firewall -> PrivateIP(device)
   - [x] Set firewall add port 5985, 5986
 - **Ansible**
